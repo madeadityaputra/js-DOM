@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute</title>
+  </head>
+  <body>
+    <img id="logo" src="https://www.programmerzamannow.com/img/pzn.png" alt="logo PZN" />
+
+    <script>
+      const logo = document.getElementById("logo");
+
+      //* untuk mendapatkan attribute di dalam src
+      const src = logo.getAttribute("src");
+      console.log(src);
+    </script>
+  </body>
+</html>

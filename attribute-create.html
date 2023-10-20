@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute</title>
+  </head>
+  <body>
+    <img id="logo" alt="logo PZN" />
+
+    <script>
+      const logo = document.getElementById("logo");
+
+      // const src = document.createAttribute("src");
+      // src.value = "https://www.programmerzamannow.com/img/pzn.png";
+
+      // logo.setAttributeNode(src);
+      //* versi panjangnya
+
+      logo.setAttribute("src", "https://www.programmerzamannow.com/img/pzn.png");
+      //* versi cepatnya
+    </script>
+  </body>
+</html>

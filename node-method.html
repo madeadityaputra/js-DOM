@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Method</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li id="first">first</li>
+      <li id="second">second</li>
+      <li id="third">third</li>
+    </ul>
+
+    <script>
+      //* menghapus element
+      const menu = document.getElementById("menu");
+      menu.removeChild(document.getElementById("first"));
+
+      menu.removeChild(document.getElementById("third"));
+
+      //* menambahkan element
+      //* membuat vriable untuk membuat element / tag
+      const forth = document.createElement("li");
+      //* membuat variable yang berisikan text
+      const textnode = document.createTextNode("forth");
+      //* kemudian tangkap id menu, dan masukan append child
+      document.getElementById("menu").appendChild(forth);
+      //* setleah itu masukan text nya di dalam elementnya
+      forth.appendChild(textnode);
+    </script>
+  </body>
+</html>

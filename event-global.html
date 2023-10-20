@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Target</title>
+    <style>
+      div {
+        width: 500px;
+        display: grid;
+        place-items: center;
+        margin: auto;
+      }
+      #clickMe {
+        border-style: double;
+        padding: 5px;
+        font-size: xx-large;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div><input id="clickMe" type="button" value="Sentuh Aku" /></div>
+
+    <script>
+      const button = document.getElementById("clickMe");
+
+      button.onclick = function () {
+        button.setAttribute("value", "Aku Cinta Kamu Sayang");
+      };
+    </script>
+  </body>
+</html>

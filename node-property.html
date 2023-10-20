@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Property</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li id="first">first</li>
+      <li id="second">second</li>
+      <li id="third">third</li>
+    </ul>
+
+    <script>
+      const menu = document.getElementById("menu");
+      console.log(menu);
+      console.log(menu.childNodes); //* untuk mendapatkan bagan bagian dari node ul nya
+
+      const second = document.getElementById("second");
+      console.log(second);
+      console.log(second.textContent); //*untuk mendapatkan dalamnya
+      console.log(second.previousSibling); //* untuk mendapatkan bagain sebelum (second)
+      console.log(second.nextSibling); //* untuk mendapatkan bagian setelah (second)
+    </script>
+  </body>
+</html>

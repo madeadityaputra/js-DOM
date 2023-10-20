@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute</title>
+  </head>
+  <body>
+    <img id="logo" src="https://www.programmerzamannow.com/img/pzn.png" alt="logo PZN" />
+
+    <script>
+      //* ini adalah kumpulan dari attribute.
+      //* jika kita ingin tau apa saja isi attribute di dalam node , kita bisa menggunakan fungsi ini
+
+      const logo = document.getElementById("logo");
+      const attributes = logo.attributes;
+
+      for (let attribute of attributes) {
+        console.log(`${attribute.name} : ${attribute.value}`);
+      }
+    </script>
+  </body>
+</html>

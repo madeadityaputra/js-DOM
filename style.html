@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><Style></Style></title>
+  </head>
+  <style>
+    #container {
+      width: 505px;
+      display: grid;
+      margin: auto;
+      place-items: center;
+    }
+
+    input {
+      display: inline-block;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: xx-large;
+      margin: 5px;
+      width: 200px;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="canvas" style="width: 500px; height: 500px; background-color: black"></div>
+
+      <input type="button" value="BLUE" />
+      <input type="button" value="RED" />
+      <input type="button" value="YELLOW" />
+    </div>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const buttons = document.querySelectorAll("input");
+
+      for (const button of buttons) {
+        button.onclick = function () {
+          canvas.style.backgroundColor = button.getAttribute("value");
+        };
+      }
+    </script>
+  </body>
+</html>
